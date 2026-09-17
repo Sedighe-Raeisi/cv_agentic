@@ -1,0 +1,19 @@
+# Virtual Environment
+.venv/
+venv/
+
+# Environment Variables & Secrets
+.env
+
+# VS Code User Local Settings
+.vscode/*
+!.vscode/settings.json
+
+# Python Artifacts & Caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Vector DB & Storage Caches
+.chroma/
+*.db
