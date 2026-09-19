@@ -5,6 +5,8 @@ An autonomous, stateful agentic system built with **LangGraph**, **LangChain**, 
 ---
 
 ## 🏗️ System Architecture
+
+
 +------------------------+
              |    Raw PDF / Input     |
              +-----------+------------+
@@ -66,7 +68,8 @@ cv_agentic/
 ├── requirements.txt        # Locked python dependencies
 └── README.md               # Project documentation
 
-**Installation**
+**Installation**  
+
 Clone the repository and set up a virtual environment:
 git clone [https://github.com/Sedighe-Raeisi/cv_agentic.git](https://github.com/Sedighe-Raeisi/cv_agentic.git)
 cd cv_agentic
@@ -79,12 +82,14 @@ python -m venv .venv
 
 pip install -r requirements.txt
 
-**Environment Configuration**
+**Environment Configuration**  
+
 Create a .env file in the root directory:
 # Provider Options: academiccloud | openai | ollama
 PROVIDER=academiccloud
 
-# Academic Cloud (GWDG SAIA) Configuration
+# Academic Cloud (GWDG SAIA) Configuration  
+
 ACADEMIC_API_KEY=your_academic_cloud_key
 ACADEMIC_BASE_URL=[https://chat-ai.academiccloud.de/v1](https://chat-ai.academiccloud.de/v1)
 ACADEMIC_MODEL=meta-llama-3.1-8b-instruct
@@ -93,6 +98,7 @@ ACADEMIC_MODEL=meta-llama-3.1-8b-instruct
 GITHUB_TOKEN=your_github_personal_access_token
 
 **Usage**
+
 Place your target PDF CV in the root directory (e.g., CV_SedigheRaeisi2026.pdf).
 
 **Run the pipeline:**
