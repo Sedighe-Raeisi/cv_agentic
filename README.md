@@ -6,7 +6,7 @@ An autonomous, stateful agentic system built with **LangGraph**, **LangChain**, 
 
 ## 🏗️ System Architecture
 
-
+```text
 +------------------------+
              |    Raw PDF / Input     |
              +-----------+------------+
@@ -37,7 +37,7 @@ An autonomous, stateful agentic system built with **LangGraph**, **LangChain**, 
              +------------------------+
 
 ---
-
+```
 ## ✨ Key Features
 
 - **Stateful Directed Graph**: Orchestrated via **LangGraph** to manage multi-node execution state.
@@ -67,8 +67,8 @@ cv_agentic/
 ├── main.py                 # Application entry point
 ├── requirements.txt        # Locked python dependencies
 └── README.md               # Project documentation
-
-**Installation**  
+```
+## Installation 
 
 Clone the repository and set up a virtual environment:
 git clone [https://github.com/Sedighe-Raeisi/cv_agentic.git](https://github.com/Sedighe-Raeisi/cv_agentic.git)
