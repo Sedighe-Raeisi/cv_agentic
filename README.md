@@ -7,7 +7,7 @@ An autonomous, stateful agentic system built with **LangGraph**, **LangChain**, 
 ## 🏗️ System Architecture
 
 ```text
-+------------------------+
+             +------------------------+
              |    Raw PDF / Input     |
              +-----------+------------+
                          |
