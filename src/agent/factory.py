@@ -22,16 +22,16 @@ def get_llm(provider: str = None) -> BaseChatModel:
     if provider is None or provider == "academiccloud":
         
         provider = "academiccloud"
-        api_key = os.getenv("ACADEMIC_API_KEY")
-        base_url = os.getenv("ACADEMIC_BASE_URL", "https://chat-ai.academiccloud.de/v1")
-        model_name = os.getenv("ACADEMIC_MODEL", "meta-llama-3.1-8b-instruct")
+        api_key = os.getenv("LLM_API_KEY")
+        base_url = os.getenv("LLM_BASE_URL", "https://chat-ai.academiccloud.de/v1")
+        model_name = os.getenv("LLM_MODEL", "meta-llama-3.1-8b-instruct")
         print("===================================")
         print(f" Provider: {provider}, base_url = {base_url}, model_name = {model_name}")
         print("===================================")
         if not api_key:
             raise ValueError(
-                "Missing ACADEMIC_API_KEY environment variable. "
-                "Please add ACADEMIC_API_KEY=your_key to your local .env file."
+                "Missing LLM_API_KEY environment variable. "
+                "Please add LLM_API_KEY=your_key to your local .env file."
             )
 
         return ChatOpenAI(
